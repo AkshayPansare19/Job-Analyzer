@@ -8,7 +8,7 @@ function App() {
   const [location, setLocation] = useState("");
   const [experience, setExperience] = useState("");
 
-  const [showLogin, setShowLogin] = useState(false);
+ const [showLogin, setShowLogin] = useState(true);
   const [showSignup, setShowSignup] = useState(false);
   const [selectedJob, setSelectedJob] = useState(null);
 const [showResumeMatch, setShowResumeMatch] = useState(false);

@@ -1346,3 +1346,20 @@ footer p {
     font-size: 40px;
   }
 }
+
+
+/* Center login and signup pages */
+.auth-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+}
