@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Login from "./login.jsx";
-import Signup from "./Signup.jsx";
+import Signup from "./signup.jsx";
 import ResumeMatch from "./ResumeMatch.jsx";
 
 function App() {
