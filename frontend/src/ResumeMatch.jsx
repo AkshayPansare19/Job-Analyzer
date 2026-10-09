@@ -58,7 +58,7 @@ function ResumeMatch({ job, onBack }) {
       );
 
       const response = await fetch(
-        "http://127.0.0.1:8000/api/match-resume",
+        " https://job-analyzer-3.onrender.com/api/resume-match",
         {
           method: "POST",
           body: formData,

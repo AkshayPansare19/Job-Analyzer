@@ -38,8 +38,8 @@ const [showResumeMatch, setShowResumeMatch] = useState(false);
       params.append("experience", experience);
 
       const response = await fetch(
-        `http://127.0.0.1:8000/api/jobs?${params.toString()}`
-      );
+  ` https://job-analyzer-3.onrender.com/api/jobs?${params.toString()}`
+);
 
       if (!response.ok) {
         throw new Error("Failed to fetch jobs");
