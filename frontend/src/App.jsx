@@ -37,8 +37,9 @@ const [showResumeMatch, setShowResumeMatch] = useState(false);
       params.append("location", location);
       params.append("experience", experience);
 
-      const response = await fetch(
-  ` https://job-analyzer-3.onrender.com/api/jobs?${params.toString()}`
+      
+const response = await fetch(
+  `https://job-analyzer-3.onrender.com/api/jobs?${params.toString()}`
 );
 
       if (!response.ok) {
