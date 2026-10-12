@@ -70,13 +70,14 @@ def get_jobs(
     # Adzuna India API
     url = "https://api.adzuna.com/v1/api/jobs/in/search/1"
 
-    params = {
-        "app_id": ADZUNA_APP_ID,
-        "app_key": ADZUNA_APP_KEY,
-        "what": search_keywords,
-        "where": search_location,
-        "results_per_page": 20,
-        "content-type": "application/json"
+    
+params = {
+    "app_id": ADZUNA_APP_ID,
+    "app_key": ADZUNA_APP_KEY,
+    "what": search_keywords,
+    "where": search_location,
+    "results_per_page": 20,
+}
     }
 
     try:
@@ -96,6 +97,9 @@ def get_jobs(
             }
 
         data = response.json()
+        print("Adzuna status:", response.status_code)
+        print("Adzuna results found:", data.get("count"))
+        print("Adzuna returned jobs:", len(data.get("results", [])))
 
         adzuna_jobs = data.get("results", [])
 
