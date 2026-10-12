@@ -67,21 +67,19 @@ def get_jobs(
     if experience:
         search_keywords = f"{search_role} {experience}"
 
+   
     # Adzuna India API
     url = "https://api.adzuna.com/v1/api/jobs/in/search/1"
 
-    
-params = {
-    "app_id": ADZUNA_APP_ID,
-    "app_key": ADZUNA_APP_KEY,
-    "what": search_keywords,
-    "where": search_location,
-    "results_per_page": 20,
-}
+    params = {
+        "app_id": ADZUNA_APP_ID,
+        "app_key": ADZUNA_APP_KEY,
+        "what": search_keywords,
+        "where": search_location,
+        "results_per_page": 20,
     }
 
     try:
-
         response = requests.get(
             url,
             params=params,
