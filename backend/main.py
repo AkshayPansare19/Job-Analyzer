@@ -24,7 +24,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         "http://localhost:5174",
-        "https://job-analyzer-git-main-akshay07.vercel.app"",
+        "https://job-analyzer-git-main-akshay07.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
